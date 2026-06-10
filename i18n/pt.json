@@ -1,0 +1,21 @@
+{
+  "menu.title": "Escolha sua captura",
+  "menu.disable": "Desativar / Pesca normal",
+  "menu.empty": "Nenhum peixe foi encontrado neste local.",
+  "menu.quality": "Qualidade: {{quality}}",
+  "hud.selected": "Peixe-alvo: {{fish}}",
+  "hud.disabled": "Peixe-alvo desativado.",
+  "hud.unavailable": "{{fish}} não está disponível aqui no momento; usando pesca normal.",
+  "config.openMenuKey.name": "Abrir menu de peixe-alvo",
+  "config.openMenuKey.tooltip": "Abre o menu para escolher um peixe-alvo.",
+  "config.allowAllFish.name": "Permitir todos os peixes",
+  "config.allowAllFish.tooltip": "Mostra e permite todos os peixes conhecidos em vez de apenas os disponíveis no local atual.",
+  "config.defaultQuality.name": "Qualidade padrão",
+  "config.defaultQuality.tooltip": "Qualidade aplicada ao selecionar um peixe. Random mantém o comportamento normal de qualidade do jogo.",
+  "config.showOnlyFish.name": "Mostrar apenas peixes",
+  "config.showOnlyFish.tooltip": "Filtra o menu para mostrar apenas peixes de verdade, escondendo lixo, algas e outras capturas que não sejam peixes.",
+  "config.respectSpawningRules.name": "Respeitar regras de aparecimento",
+  "config.respectSpawningRules.tooltip": "Permite selecionar e pescar apenas peixes disponíveis no horário, clima e estação atuais.",
+  "hud.stop-fishing": "Pare de pescar antes de abrir o Choose Your Catch.",
+  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+}

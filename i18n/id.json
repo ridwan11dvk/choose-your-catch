@@ -1,0 +1,21 @@
+{
+  "menu.title": "Pilih Ikan Tangkapan",
+  "menu.disable": "Nonaktifkan / Memancing Normal",
+  "menu.empty": "Tidak ada ikan yang ditemukan di lokasi ini.",
+  "menu.quality": "Kualitas: {{quality}}",
+  "hud.selected": "Target ikan: {{fish}}",
+  "hud.disabled": "Target ikan dinonaktifkan.",
+  "hud.unavailable": "{{fish}} sedang tidak tersedia di sini; menggunakan sistem memancing normal.",
+  "config.openMenuKey.name": "Buka menu target ikan",
+  "config.openMenuKey.tooltip": "Membuka menu untuk memilih target ikan.",
+  "config.allowAllFish.name": "Izinkan semua ikan",
+  "config.allowAllFish.tooltip": "Tampilkan semua ikan yang dikenal, bukan hanya ikan yang tersedia di lokasi saat ini.",
+  "config.defaultQuality.name": "Kualitas default",
+  "config.defaultQuality.tooltip": "Kualitas yang diterapkan saat ikan dipilih. Random mempertahankan kualitas bawaan game.",
+  "config.showOnlyFish.name": "Hanya tampilkan ikan",
+  "config.showOnlyFish.tooltip": "Filter menu untuk hanya menampilkan item ikan asli, menyembunyikan sampah, rumput laut, dan tangkapan non-ikan lainnya.",
+  "config.respectSpawningRules.name": "Patuhi aturan pemijahan",
+  "config.respectSpawningRules.tooltip": "Hanya izinkan memilih dan menangkap ikan yang tersedia saat ini berdasarkan waktu, cuaca, dan musim.",
+  "hud.stop-fishing": "Berhenti memancing sebelum membuka Choose Your Catch.",
+  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+}

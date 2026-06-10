@@ -1,0 +1,21 @@
+{
+  "menu.title": "選擇你的漁獲",
+  "menu.disable": "停用 / 正常釣魚",
+  "menu.empty": "此地點沒有找到可釣的魚。",
+  "menu.quality": "品質：{{quality}}",
+  "hud.selected": "目標魚：{{fish}}",
+  "hud.disabled": "已停用目標魚。",
+  "hud.unavailable": "{{fish}}目前無法在此處釣到；將使用正常釣魚。",
+  "config.openMenuKey.name": "打開目標魚選單",
+  "config.openMenuKey.tooltip": "打開選單以選擇目標魚。",
+  "config.allowAllFish.name": "允許所有魚類",
+  "config.allowAllFish.tooltip": "顯示並允許選擇所有已知魚類，而不只是目前位置可釣的魚。",
+  "config.defaultQuality.name": "預設品質",
+  "config.defaultQuality.tooltip": "選擇魚時套用的品質。選擇「隨機」會保留遊戲原本的品質機制。",
+  "config.showOnlyFish.name": "僅顯示魚類",
+  "config.showOnlyFish.tooltip": "將選單篩選為只顯示真正的魚類物品，隱藏垃圾、海草和其他非魚類漁獲。",
+  "config.respectSpawningRules.name": "遵守刷新規則",
+  "config.respectSpawningRules.tooltip": "僅允許選擇和捕捉在目前時間、天氣和季節下可出現的魚類。",
+  "hud.stop-fishing": "請先停止釣魚，再開啟 Choose Your Catch。",
+  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+}

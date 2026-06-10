@@ -1,0 +1,26 @@
+# Build results
+bin/
+obj/
+*.dll
+*.pdb
+
+# IDE
+.vs/
+.vscode/
+*.sln.iml
+.idea/
+*.swp
+*.swo
+*~
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package manager
+packages/

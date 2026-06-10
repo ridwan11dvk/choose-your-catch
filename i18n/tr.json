@@ -1,0 +1,21 @@
+{
+  "menu.title": "Yakalayacağın Balığı Seç",
+  "menu.disable": "Devre Dışı / Normal Balıkçılık",
+  "menu.empty": "Bu konum için balık bulunamadı.",
+  "menu.quality": "Kalite: {{quality}}",
+  "hud.selected": "Hedef balık: {{fish}}",
+  "hud.disabled": "Hedef balık devre dışı.",
+  "hud.unavailable": "{{fish}} şu anda burada mevcut değil; normal balıkçılık kullanılıyor.",
+  "config.openMenuKey.name": "Hedef balık menüsünü aç",
+  "config.openMenuKey.tooltip": "Bir balık hedefi seçmek için menüyü açar.",
+  "config.allowAllFish.name": "Tüm balıklara izin ver",
+  "config.allowAllFish.tooltip": "Yalnızca mevcut konumda bulunabilen balıklar yerine bilinen tüm balıkları gösterir ve seçmeye izin verir.",
+  "config.defaultQuality.name": "Varsayılan kalite",
+  "config.defaultQuality.tooltip": "Bir balık seçildiğinde uygulanacak kalite. Rastgele seçeneği, vanilyadaki kalite davranışını korur.",
+  "config.showOnlyFish.name": "Yalnızca balıkları göster",
+  "config.showOnlyFish.tooltip": "Menüyü yalnızca gerçek balık öğelerini gösterecek şekilde süzer; çöp, deniz yosunu ve diğer balık olmayan yakalamaları gizler.",
+  "config.respectSpawningRules.name": "Doğma kurallarına uy",
+  "config.respectSpawningRules.tooltip": "Yalnızca mevcut zaman, hava ve mevsimde bulunabilen balıkların seçilmesine ve yakalanmasına izin verir.",
+  "hud.stop-fishing": "Choose Your Catch'i açmadan önce balık tutmayı bırakın.",
+  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+}

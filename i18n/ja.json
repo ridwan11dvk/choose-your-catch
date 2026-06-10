@@ -1,0 +1,21 @@
+{
+  "menu.title": "釣る魚を選択",
+  "menu.disable": "無効化 / 通常の釣り",
+  "menu.empty": "この場所で釣れる魚が見つかりません。",
+  "menu.quality": "品質: {{quality}}",
+  "hud.selected": "対象の魚: {{fish}}",
+  "hud.disabled": "対象の魚を無効にしました。",
+  "hud.unavailable": "{{fish}}は現在ここでは釣れないため、通常の釣りを使用します。",
+  "config.openMenuKey.name": "対象の魚メニューを開く",
+  "config.openMenuKey.tooltip": "釣る魚を選択するメニューを開きます。",
+  "config.allowAllFish.name": "すべての魚を許可",
+  "config.allowAllFish.tooltip": "現在の場所で釣れる魚だけでなく、既知のすべての魚を表示して選択可能にします。",
+  "config.defaultQuality.name": "デフォルトの品質",
+  "config.defaultQuality.tooltip": "魚を選択したときに適用する品質です。Randomではゲーム本来の品質決定を維持します。",
+  "config.showOnlyFish.name": "魚のみ表示",
+  "config.showOnlyFish.tooltip": "メニューを実際の魚だけに絞り込み、ゴミ、海藻、その他の魚以外の釣果を非表示にします。",
+  "config.respectSpawningRules.name": "出現ルールを尊重",
+  "config.respectSpawningRules.tooltip": "現在の時間・天気・季節で出現可能な魚だけを選択・捕獲できるようにします。",
+  "hud.stop-fishing": "Choose Your Catchを開く前に釣りをやめてください。",
+  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+}
