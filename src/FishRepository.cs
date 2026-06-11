@@ -35,7 +35,7 @@ internal sealed class FishRepository
 
         var allFish = allowAllFish
             ? GetAllKnownFish(player, config)
-            : GetFishForPlayer(player, config);
+            : GetFishForPlayer(player.currentLocation, player, config);
 
         if (config.ShowOnlyFish)
         {
@@ -45,9 +45,23 @@ internal sealed class FishRepository
         return allFish;
     }
 
-    private List<FishEntry> GetFishForPlayer(Farmer player, ModConfig config)
+    /// <summary>Returns whether the given fish can currently be caught by the player at the given
+    /// location. When <paramref name="allowAllFish"/> is enabled, any fish is considered available
+    /// since the player explicitly opted into picking fish outside the current location.</summary>
+    public bool IsFishAvailable(string qualifiedItemId, GameLocation location, Farmer player, bool allowAllFish)
     {
-        var location = player.currentLocation;
+        if (allowAllFish)
+        {
+            return true;
+        }
+
+        var config = GetConfig();
+        return GetFishForPlayer(location, player, config)
+            .Any(entry => entry.ItemId == qualifiedItemId);
+    }
+
+    private List<FishEntry> GetFishForPlayer(GameLocation? location, Farmer player, ModConfig config)
+    {
         if (location is null)
         {
             return new List<FishEntry>();

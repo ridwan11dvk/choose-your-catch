@@ -1,7 +1,7 @@
 {
   "Name": "Choose Your Catch",
   "Author": "venturions",
-  "Version": "1.0.8",
+  "Version": "1.0.9",
   "Description": "Choose the fish you want to catch from a visual menu, with auto-fishing and multiplayer support.",
   "UniqueID": "venturions.TargetFishSync",
   "EntryDll": "TargetFishSync.dll",

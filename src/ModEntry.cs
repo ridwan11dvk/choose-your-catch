@@ -27,6 +27,10 @@ internal sealed class ModEntry : Mod
         TargetFishPatches.Service = TargetService;
         TargetFishPatches.Monitor = Monitor;
         TargetFishPatches.GetLocalDefaultQuality = () => Config.DefaultQuality;
+        TargetFishPatches.IsFishAvailableForLocalPlayer = itemId =>
+            FishRepository.IsFishAvailable(itemId, Game1.player.currentLocation, Game1.player, Config.AllowAllFish);
+        TargetFishPatches.OnLocalFishUnavailable = displayName =>
+            Game1.addHUDMessage(HUDMessage.ForCornerTextbox(Helper.Translation.Get("hud.unavailable", new { fish = displayName })));
 
         Harmony = new Harmony(ModManifest.UniqueID);
         PatchGameMethods();

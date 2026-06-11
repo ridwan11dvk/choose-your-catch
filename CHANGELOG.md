@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.9
+
+- Fixed the selected target fish still being caught after moving to a
+  different location where it can't normally spawn. The target fish is now
+  only applied when it's actually available at the player's current location
+  (unless `AllowAllFish` is enabled), with normal fishing used otherwise.
+- The release zip now packages files inside a `ChooseYourCatch` folder so
+  they don't get extracted loose into the Mods folder.
+
 ## 1.0.8
 
 - Fixed Iridium (and other non-Normal) target qualities not being applied to
