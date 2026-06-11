@@ -6,7 +6,6 @@
   "hud.selected": "Hedef balık: {{fish}}",
   "hud.disabled": "Hedef balık devre dışı.",
   "hud.unavailable": "{{fish}} şu anda burada mevcut değil; normal balıkçılık kullanılıyor.",
-  "hud.unavailable-disabled": "{{fish}} burada mevcut değil; hedef balık devre dışı bırakıldı.",
   "config.openMenuKey.name": "Hedef balık menüsünü aç",
   "config.openMenuKey.tooltip": "Bir balık hedefi seçmek için menüyü açar.",
   "config.allowAllFish.name": "Tüm balıklara izin ver",

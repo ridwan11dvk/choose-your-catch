@@ -6,7 +6,6 @@
   "hud.selected": "Zielfisch: {{fish}}",
   "hud.disabled": "Zielfisch deaktiviert.",
   "hud.unavailable": "{{fish}} ist hier derzeit nicht verfügbar; es wird normal geangelt.",
-  "hud.unavailable-disabled": "{{fish}} ist hier nicht verfügbar; Zielfischen deaktiviert.",
   "config.openMenuKey.name": "Zielfischmenü öffnen",
   "config.openMenuKey.tooltip": "Öffnet das Menü zur Auswahl eines Zielfischs.",
   "config.allowAllFish.name": "Alle Fische erlauben",

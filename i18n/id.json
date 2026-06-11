@@ -6,7 +6,6 @@
   "hud.selected": "Target ikan: {{fish}}",
   "hud.disabled": "Target ikan dinonaktifkan.",
   "hud.unavailable": "{{fish}} sedang tidak tersedia di sini; menggunakan sistem memancing normal.",
-  "hud.unavailable-disabled": "{{fish}} tidak tersedia di sini; target ikan dinonaktifkan.",
   "config.openMenuKey.name": "Buka menu target ikan",
   "config.openMenuKey.tooltip": "Membuka menu untuk memilih target ikan.",
   "config.allowAllFish.name": "Izinkan semua ikan",

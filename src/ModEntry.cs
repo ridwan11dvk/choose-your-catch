@@ -251,8 +251,6 @@ internal sealed class ModEntry : Mod
         if (!FishRepository.IsFishAvailable(selection.ItemId, e.NewLocation, Game1.player, Config.AllowAllFish))
         {
             SetLocalSelection(null);
-            Game1.addHUDMessage(HUDMessage.ForCornerTextbox(
-                Helper.Translation.Get("hud.unavailable-disabled", new { fish = selection.DisplayName })));
         }
     }
 

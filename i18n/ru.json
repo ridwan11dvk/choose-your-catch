@@ -6,7 +6,6 @@
   "hud.selected": "Целевая рыба: {{fish}}",
   "hud.disabled": "Выбор целевой рыбы отключён.",
   "hud.unavailable": "{{fish}} сейчас здесь недоступна; используется обычная рыбалка.",
-  "hud.unavailable-disabled": "{{fish}} здесь недоступна; выбор целевой рыбы отключён.",
   "config.openMenuKey.name": "Открыть меню выбора рыбы",
   "config.openMenuKey.tooltip": "Открывает меню для выбора целевой рыбы.",
   "config.allowAllFish.name": "Разрешить всю рыбу",

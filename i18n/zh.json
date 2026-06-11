@@ -6,7 +6,6 @@
   "hud.selected": "目标鱼：{{fish}}",
   "hud.disabled": "已停用目标鱼。",
   "hud.unavailable": "{{fish}}目前无法在此处钓到；将使用正常钓鱼。",
-  "hud.unavailable-disabled": "{{fish}}在此处不可用；已停用目标鱼。",
   "config.openMenuKey.name": "打开目标鱼菜单",
   "config.openMenuKey.tooltip": "打开菜单以选择目标鱼。",
   "config.allowAllFish.name": "允许所有鱼类",

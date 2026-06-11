@@ -6,7 +6,6 @@
   "hud.selected": "Peixe-alvo: {{fish}}",
   "hud.disabled": "Peixe-alvo desativado.",
   "hud.unavailable": "{{fish}} não está disponível aqui no momento; usando pesca normal.",
-  "hud.unavailable-disabled": "{{fish}} não está disponível aqui; peixe-alvo desativado.",
   "config.openMenuKey.name": "Abrir menu de peixe-alvo",
   "config.openMenuKey.tooltip": "Abre o menu para escolher um peixe-alvo.",
   "config.allowAllFish.name": "Permitir todos os peixes",

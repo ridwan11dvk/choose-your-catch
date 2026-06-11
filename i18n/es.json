@@ -6,7 +6,6 @@
   "hud.selected": "Pez objetivo: {{fish}}",
   "hud.disabled": "Pez objetivo desactivado.",
   "hud.unavailable": "{{fish}} no está disponible aquí ahora; se usará la pesca normal.",
-  "hud.unavailable-disabled": "{{fish}} no está disponible aquí; pesca de objetivo desactivada.",
   "config.openMenuKey.name": "Abrir menú de pez objetivo",
   "config.openMenuKey.tooltip": "Abre el menú para elegir un pez objetivo.",
   "config.allowAllFish.name": "Permitir todos los peces",

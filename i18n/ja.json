@@ -6,7 +6,6 @@
   "hud.selected": "対象の魚: {{fish}}",
   "hud.disabled": "対象の魚を無効にしました。",
   "hud.unavailable": "{{fish}}は現在ここでは釣れないため、通常の釣りを使用します。",
-  "hud.unavailable-disabled": "{{fish}}はここでは利用できないため、対象の魚を無効にしました。",
   "config.openMenuKey.name": "対象の魚メニューを開く",
   "config.openMenuKey.tooltip": "釣る魚を選択するメニューを開きます。",
   "config.allowAllFish.name": "すべての魚を許可",
