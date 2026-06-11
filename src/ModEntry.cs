@@ -29,8 +29,6 @@ internal sealed class ModEntry : Mod
         TargetFishPatches.GetLocalDefaultQuality = () => Config.DefaultQuality;
         TargetFishPatches.IsFishAvailableForLocalPlayer = itemId =>
             FishRepository.IsFishAvailable(itemId, Game1.player.currentLocation, Game1.player, Config.AllowAllFish);
-        TargetFishPatches.OnLocalFishUnavailable = displayName =>
-            Game1.addHUDMessage(HUDMessage.ForCornerTextbox(Helper.Translation.Get("hud.unavailable", new { fish = displayName })));
 
         Harmony = new Harmony(ModManifest.UniqueID);
         PatchGameMethods();
@@ -39,6 +37,7 @@ internal sealed class ModEntry : Mod
         helper.Events.GameLoop.GameLaunched += OnGameLaunched;
         helper.Events.Content.AssetsInvalidated += OnAssetsInvalidated;
         helper.Events.GameLoop.SaveLoaded += OnSaveLoaded;
+        helper.Events.Player.Warped += OnWarped;
         helper.Events.Multiplayer.ModMessageReceived += OnModMessageReceived;
         helper.Events.Multiplayer.PeerConnected += OnPeerConnected;
         helper.Events.Multiplayer.PeerDisconnected += OnPeerDisconnected;
@@ -234,6 +233,27 @@ internal sealed class ModEntry : Mod
     {
         FishRepository.ClearCache();
         TargetService.Clear();
+    }
+
+    private void OnWarped(object? sender, WarpedEventArgs e)
+    {
+        if (!e.IsLocalPlayer || Config.AllowAllFish)
+        {
+            return;
+        }
+
+        var selection = TargetService.Get(Game1.player.UniqueMultiplayerID);
+        if (selection is null)
+        {
+            return;
+        }
+
+        if (!FishRepository.IsFishAvailable(selection.ItemId, e.NewLocation, Game1.player, Config.AllowAllFish))
+        {
+            SetLocalSelection(null);
+            Game1.addHUDMessage(HUDMessage.ForCornerTextbox(
+                Helper.Translation.Get("hud.unavailable-disabled", new { fish = selection.DisplayName })));
+        }
     }
 
     private void SetLocalSelection(TargetFishSelection? selection)

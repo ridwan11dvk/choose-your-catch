@@ -6,6 +6,7 @@
   "hud.selected": "Poisson ciblé : {{fish}}",
   "hud.disabled": "Ciblage du poisson désactivé.",
   "hud.unavailable": "{{fish}} n'est pas disponible ici actuellement ; utilisation de la pêche normale.",
+  "hud.unavailable-disabled": "{{fish}} n'est pas disponible ici ; ciblage du poisson désactivé.",
   "config.openMenuKey.name": "Ouvrir le menu du poisson ciblé",
   "config.openMenuKey.tooltip": "Ouvre le menu permettant de choisir un poisson ciblé.",
   "config.allowAllFish.name": "Autoriser tous les poissons",
@@ -17,5 +18,16 @@
   "config.respectSpawningRules.name": "Respecter les règles d'apparition",
   "config.respectSpawningRules.tooltip": "N'autorise la sélection et la capture que des poissons disponibles selon l'heure, la météo et la saison actuelles.",
   "hud.stop-fishing": "Arrêtez de pêcher avant d'ouvrir Choose Your Catch.",
-  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+  "menu.sort": "Sort: {{mode}}",
+  "menu.filter": "Filter: {{mode}}",
+  "menu.sort.name": "Name (A-Z)",
+  "menu.sort.priceHigh": "Price (High-Low)",
+  "menu.sort.priceLow": "Price (Low-High)",
+  "menu.sort.uncaught": "Uncaught First",
+  "menu.filter.all": "All Catches",
+  "menu.filter.uncaught": "Uncaught Only",
+  "menu.badge.new": "NEW",
+  "menu.tooltip.price": "Sell price: {{price}}g",
+  "menu.tooltip.uncaught": "Not caught yet",
+  "menu.empty.uncaught": "No uncaught fish are available in this list."
 }

@@ -6,6 +6,7 @@
   "hud.selected": "目標魚：{{fish}}",
   "hud.disabled": "已停用目標魚。",
   "hud.unavailable": "{{fish}}目前無法在此處釣到；將使用正常釣魚。",
+  "hud.unavailable-disabled": "{{fish}}在此處不可用；已停用目標魚。",
   "config.openMenuKey.name": "打開目標魚選單",
   "config.openMenuKey.tooltip": "打開選單以選擇目標魚。",
   "config.allowAllFish.name": "允許所有魚類",
@@ -17,5 +18,16 @@
   "config.respectSpawningRules.name": "遵守刷新規則",
   "config.respectSpawningRules.tooltip": "僅允許選擇和捕捉在目前時間、天氣和季節下可出現的魚類。",
   "hud.stop-fishing": "請先停止釣魚，再開啟 Choose Your Catch。",
-  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+  "menu.sort": "Sort: {{mode}}",
+  "menu.filter": "Filter: {{mode}}",
+  "menu.sort.name": "Name (A-Z)",
+  "menu.sort.priceHigh": "Price (High-Low)",
+  "menu.sort.priceLow": "Price (Low-High)",
+  "menu.sort.uncaught": "Uncaught First",
+  "menu.filter.all": "All Catches",
+  "menu.filter.uncaught": "Uncaught Only",
+  "menu.badge.new": "NEW",
+  "menu.tooltip.price": "Sell price: {{price}}g",
+  "menu.tooltip.uncaught": "Not caught yet",
+  "menu.empty.uncaught": "No uncaught fish are available in this list."
 }

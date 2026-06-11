@@ -6,6 +6,7 @@
   "hud.selected": "Target fish: {{fish}}",
   "hud.disabled": "Target fish disabled.",
   "hud.unavailable": "{{fish}} is not currently available here; using normal fishing.",
+  "hud.unavailable-disabled": "{{fish}} isn't available here; target fishing disabled.",
   "config.openMenuKey.name": "Open target fish menu",
   "config.openMenuKey.tooltip": "Opens the menu to choose a fish target.",
   "config.allowAllFish.name": "Allow all fish",

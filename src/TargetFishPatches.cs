@@ -14,12 +14,9 @@ internal static class TargetFishPatches
     public static Func<FishQuality>? GetLocalDefaultQuality { get; set; }
 
     /// <summary>Returns whether the given target fish can currently be caught by the local player,
-    /// i.e. it's a valid catch for their current location and context (unless AllowAllFish is on).</summary>
+    /// i.e. it's a valid catch for their current location and context (unless AllowAllFish is on).
+    /// This is a safety net; ModEntry normally clears the selection on warp before this matters.</summary>
     public static Func<string, bool>? IsFishAvailableForLocalPlayer { get; set; }
-
-    /// <summary>Called when the local player's selected target fish isn't available at their current
-    /// location, so normal fishing is used instead for this catch.</summary>
-    public static Action<string>? OnLocalFishUnavailable { get; set; }
 
     public static void GetFishFromLocationDataPostfix(Farmer player, ref Item __result)
     {
@@ -74,7 +71,6 @@ internal static class TargetFishPatches
 
             if (isLocalPlayer && IsFishAvailableForLocalPlayer?.Invoke(selection.ItemId) == false)
             {
-                OnLocalFishUnavailable?.Invoke(selection.DisplayName);
                 return;
             }
 

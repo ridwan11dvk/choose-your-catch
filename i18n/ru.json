@@ -6,6 +6,7 @@
   "hud.selected": "Целевая рыба: {{fish}}",
   "hud.disabled": "Выбор целевой рыбы отключён.",
   "hud.unavailable": "{{fish}} сейчас здесь недоступна; используется обычная рыбалка.",
+  "hud.unavailable-disabled": "{{fish}} здесь недоступна; выбор целевой рыбы отключён.",
   "config.openMenuKey.name": "Открыть меню выбора рыбы",
   "config.openMenuKey.tooltip": "Открывает меню для выбора целевой рыбы.",
   "config.allowAllFish.name": "Разрешить всю рыбу",
@@ -17,5 +18,16 @@
   "config.respectSpawningRules.name": "Соблюдать правила появления",
   "config.respectSpawningRules.tooltip": "Разрешает выбирать и ловить только ту рыбу, которая доступна в это время, при текущей погоде и в текущем сезоне.",
   "hud.stop-fishing": "Прекратите рыбалку перед открытием Choose Your Catch.",
-  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+  "menu.sort": "Sort: {{mode}}",
+  "menu.filter": "Filter: {{mode}}",
+  "menu.sort.name": "Name (A-Z)",
+  "menu.sort.priceHigh": "Price (High-Low)",
+  "menu.sort.priceLow": "Price (Low-High)",
+  "menu.sort.uncaught": "Uncaught First",
+  "menu.filter.all": "All Catches",
+  "menu.filter.uncaught": "Uncaught Only",
+  "menu.badge.new": "NEW",
+  "menu.tooltip.price": "Sell price: {{price}}g",
+  "menu.tooltip.uncaught": "Not caught yet",
+  "menu.empty.uncaught": "No uncaught fish are available in this list."
 }

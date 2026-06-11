@@ -6,6 +6,7 @@
   "hud.selected": "Hedef balık: {{fish}}",
   "hud.disabled": "Hedef balık devre dışı.",
   "hud.unavailable": "{{fish}} şu anda burada mevcut değil; normal balıkçılık kullanılıyor.",
+  "hud.unavailable-disabled": "{{fish}} burada mevcut değil; hedef balık devre dışı bırakıldı.",
   "config.openMenuKey.name": "Hedef balık menüsünü aç",
   "config.openMenuKey.tooltip": "Bir balık hedefi seçmek için menüyü açar.",
   "config.allowAllFish.name": "Tüm balıklara izin ver",
@@ -17,5 +18,16 @@
   "config.respectSpawningRules.name": "Doğma kurallarına uy",
   "config.respectSpawningRules.tooltip": "Yalnızca mevcut zaman, hava ve mevsimde bulunabilen balıkların seçilmesine ve yakalanmasına izin verir.",
   "hud.stop-fishing": "Choose Your Catch'i açmadan önce balık tutmayı bırakın.",
-  "menu.sort": "Sort: {{mode}}", "menu.filter": "Filter: {{mode}}", "menu.sort.name": "Name (A-Z)", "menu.sort.priceHigh": "Price (High-Low)", "menu.sort.priceLow": "Price (Low-High)", "menu.sort.uncaught": "Uncaught First", "menu.filter.all": "All Catches", "menu.filter.uncaught": "Uncaught Only", "menu.badge.new": "NEW", "menu.tooltip.price": "Sell price: {{price}}g", "menu.tooltip.uncaught": "Not caught yet", "menu.empty.uncaught": "No uncaught fish are available in this list."
+  "menu.sort": "Sort: {{mode}}",
+  "menu.filter": "Filter: {{mode}}",
+  "menu.sort.name": "Name (A-Z)",
+  "menu.sort.priceHigh": "Price (High-Low)",
+  "menu.sort.priceLow": "Price (Low-High)",
+  "menu.sort.uncaught": "Uncaught First",
+  "menu.filter.all": "All Catches",
+  "menu.filter.uncaught": "Uncaught Only",
+  "menu.badge.new": "NEW",
+  "menu.tooltip.price": "Sell price: {{price}}g",
+  "menu.tooltip.uncaught": "Not caught yet",
+  "menu.empty.uncaught": "No uncaught fish are available in this list."
 }

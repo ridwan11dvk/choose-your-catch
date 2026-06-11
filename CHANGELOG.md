@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.10
+
+- The target fish selection is now automatically cleared (with a HUD notice)
+  when the player moves to a location where that fish can't spawn, instead of
+  repeatedly showing "fish not available" messages every time they fish
+  elsewhere.
+
 ## 1.0.9
 
 - Fixed the selected target fish still being caught after moving to a
