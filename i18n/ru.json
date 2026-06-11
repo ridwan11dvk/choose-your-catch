@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "Разрешить всю рыбу",
   "config.allowAllFish.tooltip": "Показывает и разрешает всю известную рыбу, а не только доступную в текущей локации.",
   "config.defaultQuality.name": "Качество по умолчанию",
-  "config.defaultQuality.tooltip": "Качество, применяемое при выборе рыбы. Random сохраняет обычное игровое определение качества.",
+  "config.defaultQuality.tooltip": "Качество, применяемое при выборе рыбы. Vanilla сохраняет обычное игровое определение качества.",
   "config.showOnlyFish.name": "Показывать только рыбу",
   "config.showOnlyFish.tooltip": "Фильтрует меню так, чтобы показывать только настоящую рыбу, скрывая мусор, водоросли и другой улов, который не является рыбой.",
   "config.respectSpawningRules.name": "Соблюдать правила появления",

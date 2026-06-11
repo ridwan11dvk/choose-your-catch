@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.8
+
+- Fixed Iridium (and other non-Normal) target qualities not being applied to
+  the caught fish; the quality is now set on the actual item produced by the
+  fishing rod instead of the discarded item passed to the minigame callback.
+- Fixed Gold and Silver target qualities being ignored in favor of Normal when
+  the Default Quality setting was changed after a fish was already selected;
+  the mod now reads the current Default Quality live at catch time.
+- Renamed the "Random" quality option to "Vanilla", which now means the mod's
+  quality override is skipped entirely and the game's normal quality logic
+  determines the result.
+
 ## 1.0.7
 
 - Added sorting by name, price, and uncaught status.

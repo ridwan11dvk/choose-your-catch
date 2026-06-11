@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "すべての魚を許可",
   "config.allowAllFish.tooltip": "現在の場所で釣れる魚だけでなく、既知のすべての魚を表示して選択可能にします。",
   "config.defaultQuality.name": "デフォルトの品質",
-  "config.defaultQuality.tooltip": "魚を選択したときに適用する品質です。Randomではゲーム本来の品質決定を維持します。",
+  "config.defaultQuality.tooltip": "魚を選択したときに適用する品質です。Vanillaではゲーム本来の品質決定を維持します。",
   "config.showOnlyFish.name": "魚のみ表示",
   "config.showOnlyFish.tooltip": "メニューを実際の魚だけに絞り込み、ゴミ、海藻、その他の魚以外の釣果を非表示にします。",
   "config.respectSpawningRules.name": "出現ルールを尊重",

@@ -13,12 +13,12 @@ internal sealed class ModConfig
 
     public bool RespectSpawningRules { get; set; } = true;
 
-    public FishQuality DefaultQuality { get; set; } = FishQuality.Random;
+    public FishQuality DefaultQuality { get; set; } = FishQuality.Vanilla;
 }
 
 internal enum FishQuality
 {
-    Random = -1,
+    Vanilla = -1,
     Normal = 0,
     Silver = 1,
     Gold = 2,

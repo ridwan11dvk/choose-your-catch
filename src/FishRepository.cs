@@ -465,7 +465,7 @@ internal sealed class FishRepository
 
     private static int GetMenuPrice(Item item, FishQuality quality)
     {
-        var resolvedQuality = quality == FishQuality.Random ? FishQuality.Normal : quality;
+        var resolvedQuality = quality == FishQuality.Vanilla ? FishQuality.Normal : quality;
         var originalQuality = item.Quality;
         try
         {

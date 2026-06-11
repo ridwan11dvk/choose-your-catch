@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "Izinkan semua ikan",
   "config.allowAllFish.tooltip": "Tampilkan semua ikan yang dikenal, bukan hanya ikan yang tersedia di lokasi saat ini.",
   "config.defaultQuality.name": "Kualitas default",
-  "config.defaultQuality.tooltip": "Kualitas yang diterapkan saat ikan dipilih. Random mempertahankan kualitas bawaan game.",
+  "config.defaultQuality.tooltip": "Kualitas yang diterapkan saat ikan dipilih. Vanilla mempertahankan kualitas bawaan game.",
   "config.showOnlyFish.name": "Hanya tampilkan ikan",
   "config.showOnlyFish.tooltip": "Filter menu untuk hanya menampilkan item ikan asli, menyembunyikan sampah, rumput laut, dan tangkapan non-ikan lainnya.",
   "config.respectSpawningRules.name": "Patuhi aturan pemijahan",

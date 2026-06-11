@@ -26,6 +26,7 @@ internal sealed class ModEntry : Mod
 
         TargetFishPatches.Service = TargetService;
         TargetFishPatches.Monitor = Monitor;
+        TargetFishPatches.GetLocalDefaultQuality = () => Config.DefaultQuality;
 
         Harmony = new Harmony(ModManifest.UniqueID);
         PatchGameMethods();
@@ -73,6 +74,18 @@ internal sealed class ModEntry : Mod
             Harmony.Patch(
                 minigameStart,
                 prefix: new HarmonyMethod(typeof(TargetFishPatches), nameof(TargetFishPatches.StartMinigameEndFunctionPrefix)));
+        }
+
+        var createFish = AccessTools.Method(typeof(FishingRod), "CreateFish");
+        if (createFish is not null)
+        {
+            Harmony.Patch(
+                createFish,
+                postfix: new HarmonyMethod(typeof(TargetFishPatches), nameof(TargetFishPatches.CreateFishPostfix)));
+        }
+        else
+        {
+            Monitor.Log("Couldn't patch FishingRod.CreateFish; target quality will not be applied.", LogLevel.Warn);
         }
     }
 

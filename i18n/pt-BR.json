@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "Permitir todos os peixes",
   "config.allowAllFish.tooltip": "Mostra e permite todos os peixes conhecidos em vez de apenas os disponíveis no local atual.",
   "config.defaultQuality.name": "Qualidade padrão",
-  "config.defaultQuality.tooltip": "Qualidade aplicada ao selecionar um peixe. A opção Random mantém o comportamento normal de qualidade do jogo.",
+  "config.defaultQuality.tooltip": "Qualidade aplicada ao selecionar um peixe. A opção Vanilla mantém o comportamento normal de qualidade do jogo.",
   "config.showOnlyFish.name": "Mostrar apenas peixes",
   "config.showOnlyFish.tooltip": "Filtra o menu para mostrar apenas peixes de verdade, escondendo lixo, algas e outras capturas que não sejam peixes.",
   "config.respectSpawningRules.name": "Respeitar regras de aparecimento",

@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "允许所有鱼类",
   "config.allowAllFish.tooltip": "显示并允许选择所有已知鱼类，而不只是在当前位置可钓的鱼。",
   "config.defaultQuality.name": "默认品质",
-  "config.defaultQuality.tooltip": "选择鱼时应用的品质。Random会保留游戏原本的品质机制。",
+  "config.defaultQuality.tooltip": "选择鱼时应用的品质。Vanilla会保留游戏原本的品质机制。",
   "config.showOnlyFish.name": "仅显示鱼类",
   "config.showOnlyFish.tooltip": "过滤菜单以仅显示实际的鱼类物品，隐藏垃圾、海藻和其他非鱼类渔获。",
   "config.respectSpawningRules.name": "遵守刷新规则",

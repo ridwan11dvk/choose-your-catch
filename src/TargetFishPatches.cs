@@ -9,6 +9,10 @@ internal static class TargetFishPatches
 
     public static IMonitor? Monitor { get; set; }
 
+    /// <summary>Returns the local player's current Default Quality config value, read live so config
+    /// changes apply immediately without needing to reselect a target fish.</summary>
+    public static Func<FishQuality>? GetLocalDefaultQuality { get; set; }
+
     public static void GetFishFromLocationDataPostfix(Farmer player, ref Item __result)
     {
         TryReplaceFish(player, ref __result);
@@ -17,6 +21,23 @@ internal static class TargetFishPatches
     public static void StartMinigameEndFunctionPrefix(ref Item fish)
     {
         TryReplaceFish(Game1.player, ref fish);
+    }
+
+    public static void CreateFishPostfix(ref Item __result)
+    {
+        // CreateFish() builds the actual item the player receives from
+        // FishingRod.whichFish/fishQuality, independent of the Item passed to
+        // startMinigameEndFunction, so the chosen quality must be applied here.
+        var selection = Service?.Get(Game1.player.UniqueMultiplayerID);
+        if (selection is null || __result is null)
+        {
+            return;
+        }
+
+        // CreateFish always runs for the local player, so prefer the live config value over the
+        // (possibly stale) snapshot taken when the fish was selected in the menu.
+        var quality = GetLocalDefaultQuality?.Invoke() ?? selection.Quality;
+        ApplyQuality(__result, quality);
     }
 
     private static void TryReplaceFish(Farmer? player, ref Item fish)
@@ -41,8 +62,13 @@ internal static class TargetFishPatches
                 return;
             }
 
+            var isLocalPlayer = player.UniqueMultiplayerID == Game1.player.UniqueMultiplayerID;
+            var quality = isLocalPlayer
+                ? GetLocalDefaultQuality?.Invoke() ?? selection.Quality
+                : selection.Quality;
+
             var replacement = ItemRegistry.Create(selection.ItemId);
-            ApplyQuality(replacement, selection.Quality);
+            ApplyQuality(replacement, quality);
             fish = replacement;
         }
         catch (Exception ex)
@@ -53,7 +79,7 @@ internal static class TargetFishPatches
 
     private static void ApplyQuality(Item item, FishQuality quality)
     {
-        if (quality == FishQuality.Random)
+        if (quality == FishQuality.Vanilla)
         {
             return;
         }

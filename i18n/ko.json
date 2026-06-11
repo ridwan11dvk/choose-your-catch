@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "모든 물고기 허용",
   "config.allowAllFish.tooltip": "현재 장소에서 잡을 수 있는 물고기뿐 아니라 알려진 모든 물고기를 표시하고 허용합니다.",
   "config.defaultQuality.name": "기본 품질",
-  "config.defaultQuality.tooltip": "물고기를 선택할 때 적용할 품질입니다. Random은 게임의 기본 품질 방식을 유지합니다.",
+  "config.defaultQuality.tooltip": "물고기를 선택할 때 적용할 품질입니다. Vanilla는 게임의 기본 품질 방식을 유지합니다.",
   "config.showOnlyFish.name": "물고기만 표시",
   "config.showOnlyFish.tooltip": "메뉴를 실제 물고기만 표시하도록 필터링하고, 쓰레기, 해초, 기타 물고기가 아닌 잡획물은 숨깁니다.",
   "config.respectSpawningRules.name": "등장 규칙 준수",

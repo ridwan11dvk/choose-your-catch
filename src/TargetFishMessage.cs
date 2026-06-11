@@ -8,7 +8,7 @@ internal sealed class TargetFishMessage
 
     public string? DisplayName { get; set; }
 
-    public FishQuality Quality { get; set; } = FishQuality.Random;
+    public FishQuality Quality { get; set; } = FishQuality.Vanilla;
 
     public TargetFishSelection? ToSelection()
     {
@@ -24,7 +24,7 @@ internal sealed class TargetFishMessage
             PlayerId = playerId,
             ItemId = selection?.ItemId,
             DisplayName = selection?.DisplayName,
-            Quality = selection?.Quality ?? FishQuality.Random
+            Quality = selection?.Quality ?? FishQuality.Vanilla
         };
     }
 }

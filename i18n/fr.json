@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "Autoriser tous les poissons",
   "config.allowAllFish.tooltip": "Affiche et autorise tous les poissons connus au lieu de ceux disponibles à l'endroit actuel.",
   "config.defaultQuality.name": "Qualité par défaut",
-  "config.defaultQuality.tooltip": "Qualité appliquée lors de la sélection d'un poisson. Random conserve le comportement normal du jeu.",
+  "config.defaultQuality.tooltip": "Qualité appliquée lors de la sélection d'un poisson. Vanilla conserve le comportement normal du jeu.",
   "config.showOnlyFish.name": "Afficher seulement les poissons",
   "config.showOnlyFish.tooltip": "Filtre le menu pour n'afficher que les vrais poissons, en masquant les détritus, les algues et les autres prises qui ne sont pas des poissons.",
   "config.respectSpawningRules.name": "Respecter les règles d'apparition",

@@ -11,7 +11,7 @@
   "config.allowAllFish.name": "Alle Fische erlauben",
   "config.allowAllFish.tooltip": "Zeigt alle bekannten Fische an und erlaubt sie, statt nur der aktuell verfügbaren Fische.",
   "config.defaultQuality.name": "Standardqualität",
-  "config.defaultQuality.tooltip": "Qualität, die beim Auswählen eines Fisches angewendet wird. Random behält das normale Qualitätsverhalten des Spiels bei.",
+  "config.defaultQuality.tooltip": "Qualität, die beim Auswählen eines Fisches angewendet wird. Vanilla behält das normale Qualitätsverhalten des Spiels bei.",
   "config.showOnlyFish.name": "Nur Fische anzeigen",
   "config.showOnlyFish.tooltip": "Filtert das Menü so, dass nur echte Fische angezeigt werden; Schrott, Seetang und andere nicht-fischartige Fänge werden ausgeblendet.",
   "config.respectSpawningRules.name": "Spawn-Regeln beachten",
