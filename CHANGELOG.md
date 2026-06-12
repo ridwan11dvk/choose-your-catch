@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.11
+
+- Fixed selected mine fish being bypassed when the mine's special fishing logic
+  rolled Cave Jelly or trash. The final `GameLocation.getFish` result is now
+  replaced before the game chooses between the fishing minigame and pulling a
+  non-fish catch from the water.
+
+## 1.0.10
+
+- Fixed a startup crash when updating from version 1.0.7 with an existing
+  config that still used `DefaultQuality: "Random"`. The legacy value is now
+  automatically migrated to the equivalent `Vanilla` option before the
+  typed config is loaded.
+
 ## 1.0.9
 
 - Fixed the selected target fish still being caught after moving to a

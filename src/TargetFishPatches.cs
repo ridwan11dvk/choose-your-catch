@@ -18,6 +18,15 @@ internal static class TargetFishPatches
     /// This is a safety net; ModEntry normally clears the selection on warp before this matters.</summary>
     public static Func<string, bool>? IsFishAvailableForLocalPlayer { get; set; }
 
+    internal static Func<string, bool> ItemExists { get; set; } = ItemRegistry.Exists;
+
+    internal static Func<string, Item> CreateItem { get; set; } = itemId => ItemRegistry.Create(itemId);
+
+    public static void GetFishPostfix(Farmer who, ref Item __result)
+    {
+        TryReplaceFish(who, ref __result);
+    }
+
     public static void GetFishFromLocationDataPostfix(Farmer player, ref Item __result)
     {
         TryReplaceFish(player, ref __result);
@@ -52,7 +61,15 @@ internal static class TargetFishPatches
             return;
         }
 
-        var selection = Service?.Get(player.UniqueMultiplayerID);
+        ReplaceSelectedCatch(
+            player.UniqueMultiplayerID,
+            player.UniqueMultiplayerID == Game1.player.UniqueMultiplayerID,
+            ref fish);
+    }
+
+    internal static void ReplaceSelectedCatch(long playerId, bool isLocalPlayer, ref Item fish)
+    {
+        var selection = Service?.Get(playerId);
         if (selection is null)
         {
             return;
@@ -60,14 +77,12 @@ internal static class TargetFishPatches
 
         try
         {
-            if (!ItemRegistry.Exists(selection.ItemId))
+            if (!ItemExists(selection.ItemId))
             {
                 Monitor?.Log($"Target fish '{selection.ItemId}' no longer exists; using normal fishing.", LogLevel.Warn);
-                Service?.Set(player.UniqueMultiplayerID, null);
+                Service?.Set(playerId, null);
                 return;
             }
-
-            var isLocalPlayer = player.UniqueMultiplayerID == Game1.player.UniqueMultiplayerID;
 
             if (isLocalPlayer && IsFishAvailableForLocalPlayer?.Invoke(selection.ItemId) == false)
             {
@@ -78,7 +93,7 @@ internal static class TargetFishPatches
                 ? GetLocalDefaultQuality?.Invoke() ?? selection.Quality
                 : selection.Quality;
 
-            var replacement = ItemRegistry.Create(selection.ItemId);
+            var replacement = CreateItem(selection.ItemId);
             ApplyQuality(replacement, quality);
             fish = replacement;
         }

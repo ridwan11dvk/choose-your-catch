@@ -4,6 +4,7 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.GameData.Locations;
+using StardewValley.Locations;
 using StardewValley.Tools;
 
 namespace TargetFishSync;
@@ -21,6 +22,7 @@ internal sealed class ModEntry : Mod
 
     public override void Entry(IModHelper helper)
     {
+        MigrateLegacyConfig(helper);
         Config = helper.ReadConfig<ModConfig>();
         FishRepository = new FishRepository(Monitor, () => Config);
 
@@ -43,8 +45,25 @@ internal sealed class ModEntry : Mod
         helper.Events.Multiplayer.PeerDisconnected += OnPeerDisconnected;
     }
 
+    private void MigrateLegacyConfig(IModHelper helper)
+    {
+        var rawConfig = helper.Data.ReadJsonFile<Dictionary<string, object?>>("config.json");
+        if (rawConfig is null || !ConfigMigration.TryNormalizeDefaultQuality(rawConfig))
+        {
+            return;
+        }
+
+        helper.Data.WriteJsonFile("config.json", rawConfig);
+        Monitor.Log(
+            "Migrated legacy DefaultQuality value 'Random' to 'Vanilla'.",
+            LogLevel.Info);
+    }
+
     private void PatchGameMethods()
     {
+        PatchFinalGetFish(typeof(GameLocation));
+        PatchFinalGetFish(typeof(MineShaft));
+
         var getFish = AccessTools.Method(
             typeof(GameLocation),
             nameof(GameLocation.GetFishFromLocationData),
@@ -89,6 +108,36 @@ internal sealed class ModEntry : Mod
         else
         {
             Monitor.Log("Couldn't patch FishingRod.CreateFish; target quality will not be applied.", LogLevel.Warn);
+        }
+    }
+
+    private void PatchFinalGetFish(Type locationType)
+    {
+        var getFinalFish = AccessTools.DeclaredMethod(
+            locationType,
+            nameof(GameLocation.getFish),
+            new[]
+            {
+                typeof(float),
+                typeof(string),
+                typeof(int),
+                typeof(Farmer),
+                typeof(double),
+                typeof(Vector2),
+                typeof(string)
+            });
+
+        if (getFinalFish is not null)
+        {
+            Harmony.Patch(
+                getFinalFish,
+                postfix: new HarmonyMethod(typeof(TargetFishPatches), nameof(TargetFishPatches.GetFishPostfix)));
+        }
+        else
+        {
+            Monitor.Log(
+                $"Couldn't patch {locationType.FullName}.getFish; its special catches may bypass target replacement.",
+                LogLevel.Warn);
         }
     }
 

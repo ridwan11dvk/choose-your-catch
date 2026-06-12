@@ -3,13 +3,17 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.9</Version>
+    <Version>1.0.11</Version>
     <PlatformTarget>x64</PlatformTarget>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>.\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>TargetFishSync.Tests</_Parameter1>
+    </AssemblyAttribute>
+
     <Reference Include="StardewModdingAPI">
       <HintPath>..\..\StardewModdingAPI.dll</HintPath>
       <Private>false</Private>
